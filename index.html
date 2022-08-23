@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <h1>Jogo da Velha</h1>
+
+    <div class="modeContainer">
+        <div class="Player">Player</div>
+        <div class="Computer">Computer</div>
+    </div>
+    <div class="hide" style="display:none">
+        <div class="board">
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+            <div class="matriz"></div>
+        </div>
+        <div class="placar">
+            <h2>Placar</h2>
+            <div class="placarX">X : 0</div>
+            <div class="placarO">O : 0</div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        let placarX = document.querySelector('.placarX');
+        let placarO = document.querySelector('.placarO');
+        let numeroPlacarX = 0
+        let numeroPlacarO = 0
+
+        function adicionaPlacar(placarPlayer, number) {
+            let substituiNumero = placarPlayer.textContent.replace(/\d+/, number);
+            placarPlayer.textContent = substituiNumero;
+        }
+
+        textoO = placarO.textContent
+
+        const modeChoice = document.querySelector('.modeContainer');
+        const hideBoard = document.querySelector('.hide');
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+html {}
+
+body::before {
+    content: '';
+    display: block;
+}
+
+body {
+    height: 90vh;
+    box-sizing: border-box;
+}
+
+.modeContainer {
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.modeContainer>* {
+    margin: 1rem 1rem;
+    padding: 1rem;
+    background-color: paleturquoise;
+    display: inline-block;
+    border-radius: .6rem;
+    transition: .2s ease-out;
+}
+
+.modeContainer>*:hover {
+    transform: scale(1.2);
+    background-color: aqua;
+}
+
+
+.board {
+    margin: auto;
+    display: grid;
+    min-width: 10rem;
+    max-width: 17rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: 85px;
+    background-color: black;
+}
+
+.matriz {
+    text-align: center;
+    line-height: 90px;
+    font-size: 4rem;
+    background-color: white;
+}
+
+.placar {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.placar h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.placar div {
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: 2rem;
+}
+
+.placar div:nth-of-type(1)::first-letter {
+    color: red;
+}
+
+.placar div:nth-of-type(2)::first-letter {
+    color: green;
+}
+
+@media screen and (max-width:400px) {
+    .modeContainer>* {
+        width: 100%;
+        margin: 1rem 0;
+        box-sizing: border-box;
+    }
+}
+
+.hide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
