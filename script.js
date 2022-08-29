@@ -57,7 +57,6 @@ class Game{
 					if(this.existeVitoriaOuEmpate()){
 						return;
 					}
-                    console.log('continua excecucao')
 					this.jogaComputer();
 					this.existeVitoriaOuEmpate();
 				}
@@ -122,7 +121,6 @@ class Game{
                 this.limparTabuleiro();
                 return true
             }
-            console.log(xVence);
             if(oVence){
                 alert('O venceu!');
                 numeroPlacarO++
